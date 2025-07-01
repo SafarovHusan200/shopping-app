@@ -1,0 +1,244 @@
+.card_container {
+  max-width: 792px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid  rgba(113, 128, 150, 0.16);
+  background: #FFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+}
+.image_container {
+  position: relative;
+  max-width: 285px;
+  max-height: 285px;
+  width: 100%;
+  height: 100%;
+}
+.dots {
+  position: absolute;
+  right: 109px;
+  bottom: 24px;
+  display: flex;
+  padding: var(--XS, 4px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--XS, 4px);
+  border-radius: 10px;
+  background: var(--gray-alpha-for-backgrounds-borders-600, rgba(113, 128, 150, 0.48));
+  z-index: 2;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--whiteAlpha-500, rgba(255, 255, 255, 0.36));
+}
+.active {
+  width: 10px;
+  height: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: var(--white, #FFF);
+}
+.image{
+  object-fit: cover;
+}
+.content_container {
+  display: flex;
+  padding: 12px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  flex: 1 0 0;
+}
+.content {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.text_container h1 {
+  color: var(--gray-for-content-500, #718096);
+  font-family: Manrope;
+  font-size: var(--Text-XS-Regular-Size, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Text-XS-Regular-Line-Height, 14px);
+  margin-bottom: 15px;
+  letter-spacing: var(--Text-XS-Regular-Letter-Spacing, 0px);
+}
+.text_container h2 {
+  color: var(--gray-for-content-700, #2D3748);
+  font-family: Manrope;
+  font-size: var(--Heading-2XL-Bold-Size, 24px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; 
+  letter-spacing: var(--Heading-2XL-Bold-Letter-Spacing, -0.5px);
+  margin-bottom: 5px;
+}
+.text_container h2 > span {
+  color: var(--gray-for-content-500, #718096);
+  font-family: Manrope;
+  font-size: var(--Text-S-Regular-Size, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--Text-S-Regular-Line-Height, 16px);
+  letter-spacing: var(--Text-S-Regular-Letter-Spacing, 0px);
+}
+.text_container p {
+  color: var(--gray-for-content-700, #2D3748);
+  font-family: Manrope;
+  font-size: var(--Text-S-Bold-Size, 12px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Text-S-Bold-Line-Height, 16px);
+  letter-spacing: var(--Text-S-Bold-Letter-Spacing, 0px);
+  margin-bottom: 12px;
+}
+
+.text_container .devices{
+  display: flex;
+  padding: var(--Paddings-2XS, 4px) 0px;
+  align-items: center;
+  gap: var(--Paddings-M, 16px);
+  margin-bottom: 12px;
+}
+.text_container .devices span {
+  display: flex;
+  align-items: center;
+  gap: var(--XS, 4px);
+  color: var(--gray-for-content-700, #2D3748);
+  font-family: Manrope;
+  font-size: var(--Text-XL-Bold-Size, 20px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: var(--Text-XL-Bold-Letter-Spacing, -0.5px);
+}
+
+.tags {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: var(--Paddings-XS, 8px);
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.tag {
+  display: flex;
+  padding: var(--2XS, 2px) var(--S, 8px) var(--2XS, 2px) var(--XS, 4px);
+  align-items: center;
+  gap: var(--2XS, 2px);
+  border-radius: 10px;
+  font-family: Manrope;
+  font-size: var(--Text-XS-Regular-Size, 12px);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--Text-XS-Regular-Line-Height, 14px);
+  letter-spacing: var(--Text-XS-Regular-Letter-Spacing, 0px);
+}
+.tag_1 {
+  border: 1px solid var(--green-100, #C6F6D5);
+  background: var(--green-50, #F0FFF4);
+  color: var(--green-500, #38A169);
+}
+.tag_2 {
+  border: 1px solid var(--orange-100, #FEEBCB);
+  background: var(--orange-50, #FFFAF0);
+  color: var(--orange-600, #C05621);
+}
+.tag_3 {
+  border: 1px solid var(--gray-alpha-for-backgrounds-borders-200, rgba(113, 128, 150, 0.08));
+  background: var(--gray-alpha-for-backgrounds-borders-200, rgba(113, 128, 150, 0.08));
+  color: var(--gray-for-content-700, #2D3748);
+}
+.tag_4 {
+  color: var(--blue-700, #2C5282);
+  border: 1px solid var(--blue-100, #BEE3F8);
+  background: var(--blue-50, #EBF8FF);
+}
+
+.icons {
+  display: flex;
+  width: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14.667px;
+}
+.icon {
+  cursor: pointer;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 5.867px;
+  aspect-ratio: 1/1;
+  border-radius: 14.667px;
+  background: var(--gray-alpha-for-backgrounds-borders-200, rgba(113, 128, 150, 0.08));
+  backdrop-filter: blur(10.266666412353516px);
+}
+.avatar {
+  cursor: pointer;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 7.7px 13.92px 7.3px 14.08px;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1; 
+  border-radius: 50%;
+  background: var(--gray-for-content-300, #CBD5E0);
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Nunito;
+  font-size: 21.12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.button {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  border: none;
+  height: 52px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  flex: 1 0 0;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Manrope;
+  font-size: var(--Text-S-Bold-Size, 12px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--Text-S-Bold-Line-Height, 16px); /* 133.333% */
+  letter-spacing: var(--Text-S-Bold-Letter-Spacing, 0px);
+}
+.button_1 {
+  background: var(--gray-for-content-100, #EDF2F7);
+  color: var(--gray-for-content-700, #2D3748);
+  font-size: var(--Text-S-Bold-Size, 12px);
+}
+.button_2 {
+  background: var(--green-400, #48BB78);
+  color: #FFF;
+  font-size: var(--Text-L-Bold-Size, 18px);
+}

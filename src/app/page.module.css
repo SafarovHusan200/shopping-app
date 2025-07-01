@@ -191,7 +191,7 @@ margin: 0 auto;
   .left_section{
     position: absolute;
     top: 0;
-    z-index: -10;
+
   }
   .right_section{
     width: 100%;
